@@ -1,8 +1,20 @@
 
-<div>
+<nav class="navbar">
+    <div class="navbar-header">
+        <div class="navbar-brand">
+            시계
+        </div>
+    </div>
+</nav>
+<div class="container">
     <ul>
         <li>{{hour}}</li>
         <li>{{minuate}}</li>
         <li>{{second}}</li>
     </ul>
+</div>
+
+<div>
+    <button (click)="buttonClicked(123)">Click please</button>
+    <h2>{{clickText}}</h2>
 </div>

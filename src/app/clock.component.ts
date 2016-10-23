@@ -9,6 +9,7 @@ export class ClockComponent {
     hour = 15;
     minuate = 30;
     second = 17;
+    clickText:string = '아직 클릭 안됐어';
 
     constructor() {
         this.updateDate();
@@ -22,5 +23,9 @@ export class ClockComponent {
         this.hour = date.getHours();
         this.minuate = date.getMinutes();
         this.second = date.getSeconds();
+    }
+
+    buttonClicked(n:number) {
+        this.clickText = n + "클릭함" + Math.random();
     }
 }
