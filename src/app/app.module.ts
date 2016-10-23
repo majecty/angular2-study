@@ -3,20 +3,26 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+import { AlertModule, AccordionModule } from 'ng2-bootstrap/ng2-bootstrap';
+
 import { AppComponent } from './app.component';
 import { ClockComponent } from './clock.component';
+import { HerosCompoent } from './heros.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ClockComponent
+    ClockComponent,
+    HerosCompoent
   ],
   imports: [
+    AlertModule,
+    AccordionModule,
     BrowserModule,
     FormsModule,
     HttpModule
   ],
   providers: [],
-  bootstrap: [AppComponent, ClockComponent]
+  bootstrap: [AppComponent, ClockComponent, HerosCompoent]
 })
 export class AppModule { }

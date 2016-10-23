@@ -7,14 +7,9 @@
     </div>
 </nav>
 <div class="container">
-    <ul>
-        <li>{{hour}}</li>
-        <li>{{minuate}}</li>
-        <li>{{second}}</li>
-    </ul>
-</div>
-
-<div>
-    <button (click)="buttonClicked(123)">Click please</button>
-    <h2>{{clickText}}</h2>
+    <div class="clockContainer">
+        <div class="clockBox">{{hour}}</div>
+        <div class="clockBox">{{minuate}}</div>
+        <div class="clockBox">{{second}}</div>
+    </div>
 </div>

@@ -1,0 +1,16 @@
+<ul>
+    <li *ngFor="let hero of heroes">{{hero}}</li>
+</ul>
+
+<input [(ngModel)]="inputValue">
+
+<p>
+  {{inputValue}}
+</p>
+
+<alert type="success">hello</alert>
+
+<div>
+    <button (click)="buttonClicked(123)">Click please</button>
+    <h2>{{clickText}}</h2>
+</div>
