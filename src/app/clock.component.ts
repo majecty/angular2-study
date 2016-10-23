@@ -9,6 +9,8 @@ export class ClockComponent {
     hour = 15;
     minuate = 30;
     second = 17;
+    countries = [ "한국", "일본" ];
+    country = "한국";
 
     constructor() {
         this.updateDate();
@@ -22,5 +24,9 @@ export class ClockComponent {
         this.hour = date.getHours();
         this.minuate = date.getMinutes();
         this.second = date.getSeconds();
+    }
+
+    chooseCountry(country:string) {
+        this.country = country;
     }
 }

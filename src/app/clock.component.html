@@ -6,8 +6,22 @@
         </div>
     </div>
 </nav>
+
+<div>
+</div>
+
 <div class="container">
     <div class="clockContainer">
+        <span dropdown class="clockBox">
+            <a href id="simple-dropdown" dropdownToggle class="countryChooserButton">
+                {{country}}
+            </a>
+            <ul class="dropdown-menu" dropdownMenu aria-labelledby="나라" class="countryChooserSelections">
+              <li *ngFor="let country of countries">
+                <a class="dropdown-item" href="#" (click)="chooseCountry(country)">{{country}}</a>
+              </li>
+            </ul>
+        </span>
         <div class="clockBox">{{hour}}</div>
         <div class="clockBox">{{minuate}}</div>
         <div class="clockBox">{{second}}</div>
