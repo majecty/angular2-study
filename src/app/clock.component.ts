@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 declare var moment: any;
-import _ from "lodash";
+declare var _: any;
 
 @Component({
     selector: 'clock',
