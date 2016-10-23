@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+declare var moment: any;
 
 @Component({
     selector: 'clock',
@@ -20,10 +21,10 @@ export class ClockComponent {
     }
 
     updateDate() {
-        var date = new Date();
-        this.hour = date.getHours();
-        this.minuate = date.getMinutes();
-        this.second = date.getSeconds();
+        var date = moment();
+        this.hour = date.hour();
+        this.minuate = date.minute();
+        this.second = date.second();
     }
 
     chooseCountry(country:string) {

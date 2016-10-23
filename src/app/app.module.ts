@@ -8,6 +8,7 @@ import {
         AccordionModule,
         DropdownModule
     } from 'ng2-bootstrap/ng2-bootstrap';
+import {MomentModule} from 'angular2-moment';
 
 import { AppComponent } from './app.component';
 import { ClockComponent } from './clock.component';
@@ -23,6 +24,8 @@ import { HerosCompoent } from './heros.component';
     AlertModule,
     AccordionModule,
     DropdownModule,
+    MomentModule,
+
     BrowserModule,
     FormsModule,
     HttpModule
